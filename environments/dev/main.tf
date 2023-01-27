@@ -33,8 +33,6 @@ module "http_server" {
   subnet  = "${module.vpc.subnet}"
 }
 
-module "firewall" {
-  source  = "../../modules/firewall"
+module "bucket" {
   project = "${var.project}"
-  subnet  = "${module.vpc.subnet}"
 }
