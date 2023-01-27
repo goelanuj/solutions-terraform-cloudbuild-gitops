@@ -41,4 +41,5 @@ module "firewall" {
 
 module "bucket" {
   source = "../../modules/bucket"
+  env     = "${local.env}"
 }
