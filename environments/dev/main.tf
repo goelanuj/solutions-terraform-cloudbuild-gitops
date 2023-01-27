@@ -34,5 +34,6 @@ module "http_server" {
 }
 
 module "bucket" {
+  source = "../../modules/bucket"
   project = "${var.project}"
 }
