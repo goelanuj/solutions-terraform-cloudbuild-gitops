@@ -43,3 +43,8 @@ module "bucket" {
   source = "../../modules/bucket"
   env     = "${local.env}"
 }
+
+module "ubuntu_vm" {
+  source = "../../modules/ubuntu_vm"
+  env     = "${local.env}"
+}
