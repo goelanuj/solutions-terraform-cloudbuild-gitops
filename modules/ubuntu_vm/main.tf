@@ -4,7 +4,6 @@ locals {
 }
 
 resource "google_compute_instance" "ubuntu_vm" {
-  count = 0
   project      = "${var.project}"
   name         = "${local.network}-ubuntu-instance"
   machine_type = "f1-micro"
