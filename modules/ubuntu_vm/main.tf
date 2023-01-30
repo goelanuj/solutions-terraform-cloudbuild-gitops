@@ -27,5 +27,5 @@ resource "google_compute_instance" "ubuntu_vm" {
     }
   }
 # Apply the firewall rule to allow external IPs to access this instance
-  tags = ["http-server"]
+#  tags = ["http-server"]
 }
