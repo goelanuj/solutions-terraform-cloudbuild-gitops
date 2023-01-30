@@ -13,4 +13,5 @@
 # limitations under the License.
 
 
-variable "env" {}
+variable "project" {}
+variable "subnet" {}
