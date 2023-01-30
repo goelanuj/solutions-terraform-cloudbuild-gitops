@@ -46,5 +46,6 @@ module "bucket" {
 
 module "ubuntu_vm" {
   source = "../../modules/ubuntu_vm"
-  env     = "${local.env}"
+  project = "${var.project}"
+  subnet  = "${module.vpc.subnet}"
 }
