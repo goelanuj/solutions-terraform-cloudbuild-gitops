@@ -15,6 +15,7 @@
 
 locals {
   env = "dev"
+  count = 0
 }
 
 provider "google" {
